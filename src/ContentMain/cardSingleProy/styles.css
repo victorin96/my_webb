@@ -1,0 +1,22 @@
+.singleProyect-card-container{
+    width: 100%;
+    height: 89%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.singleProyect-card-container-img{
+    width: 90%;
+    height: 50%;
+}
+.singleProyect-image-card{
+    width: 100%;
+    height: 100%;
+}
+
+.singleProyect-longDescription-card{
+    width: 90%;
+    height: 50%;
+}
