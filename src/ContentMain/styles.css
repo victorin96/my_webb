@@ -1,0 +1,169 @@
+/*contenedor principal*/
+.container{
+    background-color: #282c34;
+    min-height: 200vh;
+    color: #d1d1d1;
+}
+
+/*Header*/
+.box-header{
+    background-color: #282c34;
+padding: 10px;
+height: 7%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+position: fixed;
+width: 85%;
+margin-left: 6%;
+}
+.logo-header-img{
+    margin-left: 3%;
+    width: 110px;
+    height: 95px;
+}
+.logos-rrss-header{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 4%;
+}
+
+.icon-github{
+    font-size: 30px;
+    cursor: pointer;
+    color: #d1d1d1;
+}
+.icon-linkedin{
+    font-size: 30px;
+    cursor: pointer;
+    color: #d1d1d1;
+}
+.icon-github:hover{
+    transform: scale(1.2);
+    color: rgb(237, 237, 237);
+}
+.icon-linkedin:hover{
+    transform: scale(1.2);
+    color: rgb(237, 237, 237);
+}
+
+/* contenedor padre de barra lateral y contenido*/
+.container-sidebar-content{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Neucha', sans-serif;
+                                                
+}
+
+/* contenedor barra lateral*/
+.box-sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    padding: 15px;
+    margin-top: 7%;
+    margin-left:6%;
+}
+.inside-sidebar-navbar{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 5%;
+}
+.navbar{
+    font-size: 35px;
+    margin: 4%;
+    color: #d1d1d1;
+}
+.navbar:hover{
+    transform: scale(1.2);
+}
+.navbar:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar-home{
+    width: 95px;
+}
+.navbar-aboutMe{
+    width: 138px;
+}
+.navbar-portfolio{
+    width: 165px;
+}
+.navbar-contact{
+    width: 138px;
+}
+
+/* contenedor contenido*/
+.box-content{
+    height: 100%;
+    width: 72%;
+    margin-right: 11%;
+    margin-left: 33%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16%;
+}
+
+h2{
+    text-align: center;
+}
+
+/*prueba contenido*/
+.contendio-inicio{
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 70px;
+}
+.contendio-portafolio{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+
+/* footer */
+
+
+.footer-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 3px;
+  }
+  .web-footer-container {
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .icon-gmail {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  
+  
+  
+  
+  
