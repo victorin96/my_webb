@@ -16,3 +16,13 @@ code {
   font-family: 'Neucha';
   src: url('./fonts/Neucha-Regular.ttf') format('truetype');
 }
+
+:root {
+  --accent: 124, 58, 215;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    #61dafb 25%,
+    white 60%
+  );
+}

@@ -1,0 +1,67 @@
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 97%;
+  }
+  
+  .logo-header-img {
+    width: 80px;
+    height: 50px;
+  }
+  
+  .navbar-left {
+    margin-right: 10px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .box-sidebar {
+    display: flex;
+  }
+  
+  .inside-sidebar-navbar {
+    display: flex;
+    
+  }
+  
+  .navbar {
+    margin-right: 20px;
+    color: rgb(188, 244, 245);
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .navbar:hover {
+    transform: scale(1.1);
+    color: rgb(var(--accent));
+  }
+  
+  .icon-github,
+  .icon-linkedin {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(188, 244, 245);
+    transition: color 0.3s ease;
+  }
+  
+  .icon-github:hover,
+  .icon-linkedin:hover {
+    transform: scale(1.2);
+    color: rgb(var(--accent));
+  }
+  @media (max-width: 460px) {
+    .icon-linkedin{
+      margin-right: 15px;
+    }
+    .navbar-home,
+    .navbar-portfolio,
+    .navbar-contact {
+      display: none;
+    }
+  }
+  

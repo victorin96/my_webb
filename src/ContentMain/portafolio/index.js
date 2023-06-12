@@ -1,103 +1,72 @@
 import React, { useState } from "react";
 import "./styles.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import imgProyectTask from "../resources2/Captura de pantalla (559).png";
 import image from "../resources2/Captura de pantalla (559).png";
 import ProyectComponent from "../cardSingleProy";
 
 const PortafolioComponent = () => {
-  const [showSingleProyect, setShowSingleProyect] = useState(false);
-  const [itemProyect, setItemProyect] = useState();
-
-  const proyects = [
-    {
-      type: "Proyecto 1",
-      longDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namposuere dignissim orci vel rutrum. Phasellus non odio sagittis,vehicula turpis at, facilisis est. In porttitor augue a ultricesblandit. Sed auctor hendrerit enim, non dignissim nisi ultriciesvehicula. Donec non leo nec lacus pretium ullamcorper.Pellentesque tincidunt dolor ut dolor tempor, et vehicula nibhinterdum. Maecenas congue, turpis vel aliquet suscipit, risusvelit auctor erat, eu vulputate lacus sem convallis sem. Duisvenenatis, ligula in tincidunt cursus, sapien purus placerat enim,non commodo ex mi sit amet massa.",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere dignissim orci vel rutrum.",
-      img: [
-        {
-          img1: "https://www.educaciontrespuntocero.com/wp-content/uploads/2017/01/paginas_web-pixabay.png",
-        },
-        {
-          img2: "https://www.yeeply.com/wp-content/uploads/2017/04/crear-una-pagina-web-para-vender-2-1024x728-1.jpg",
-        },
-        {
-          img3: "https://profesionistas.org.mx/wp-content/uploads/2018/06/Comocrearunapaginaweb.png",
-        },
-      ],
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
     },
-    {
-      type: "Proyecto 2",
-      longDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namposuere dignissim orci vel rutrum. Phasellus non odio sagittis,vehicula turpis at, facilisis est. In porttitor augue a ultricesblandit. Sed auctor hendrerit enim, non dignissim nisi ultriciesvehicula. Donec non leo nec lacus pretium ullamcorper.Pellentesque tincidunt dolor ut dolor tempor, et vehicula nibhinterdum. Maecenas congue, turpis vel aliquet suscipit, risusvelit auctor erat, eu vulputate lacus sem convallis sem. Duisvenenatis, ligula in tincidunt cursus, sapien purus placerat enim,non commodo ex mi sit amet massa.",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere dignissim orci vel rutrum.",
-      img: [
-        {
-          img1: "https://www.educaciontrespuntocero.com/wp-content/uploads/2017/01/paginas_web-pixabay.png",
-        },
-        {
-          img2: "https://www.yeeply.com/wp-content/uploads/2017/04/crear-una-pagina-web-para-vender-2-1024x728-1.jpg",
-        },
-        {
-          img3: "https://profesionistas.org.mx/wp-content/uploads/2018/06/Comocrearunapaginaweb.png",
-        },
-      ],
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
     },
-    {
-      type: "Proyecto 3",
-      longDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Namposuere dignissim orci vel rutrum. Phasellus non odio sagittis,vehicula turpis at, facilisis est. In porttitor augue a ultricesblandit. Sed auctor hendrerit enim, non dignissim nisi ultriciesvehicula. Donec non leo nec lacus pretium ullamcorper.Pellentesque tincidunt dolor ut dolor tempor, et vehicula nibhinterdum. Maecenas congue, turpis vel aliquet suscipit, risusvelit auctor erat, eu vulputate lacus sem convallis sem. Duisvenenatis, ligula in tincidunt cursus, sapien purus placerat enim,non commodo ex mi sit amet massa.",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere dignissim orci vel rutrum.",
-      img: [
-        {
-          img1: "https://www.educaciontrespuntocero.com/wp-content/uploads/2017/01/paginas_web-pixabay.png",
-        },
-        {
-          img2: "https://www.yeeply.com/wp-content/uploads/2017/04/crear-una-pagina-web-para-vender-2-1024x728-1.jpg",
-        },
-        {
-          img3: "https://profesionistas.org.mx/wp-content/uploads/2018/06/Comocrearunapaginaweb.png",
-        },
-      ],
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
     },
-  ];
-
-  const showSingleProyectFunc = (proyect) => {
-    setShowSingleProyect(true);
-    setItemProyect(proyect);
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
   };
-
   return (
-    <div className="card-container">
-      <h2 className="h2-portafolio">Portafolio</h2>
-      {!showSingleProyect &&
-        proyects.map((proyect) => (
-          <div
-            key={proyect.type}
-            className="card-container-item"
-            onClick={() => showSingleProyectFunc(proyect)}
-          >
-            <div className="card-container-image">
-              <img
-                className="image-card"
-                src={proyect.img[0].img1}
-                alt="Proyecto"
-              />
-            </div>
-            <div className="card-container-info">
-              <p>{proyect.description}</p>
+    <section className="content-portafolio" id="portafolio">
+      <div className="container-into-portafolio">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Portafolio</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
+              </p>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="owl-carousel owl-theme skill-slider"
+                slidesToShow={1}
+                swipeable={true}
+              >
+                <div className="item">
+                  <img src={imgProyectTask} alt="Image" />
+                  <h5>Web Development</h5>
+                </div>
+                <div className="item">
+                  <img src={imgProyectTask} alt="Image" />
+                  <h5>Brand Identity</h5>
+                </div>
+                <div className="item">
+                  <img src={imgProyectTask} alt="Image" />
+                  <h5>Logo Design</h5>
+                </div>
+                <div className="item">
+                  <img src={imgProyectTask} alt="Image" />
+                  <h5>Web Development</h5>
+                </div>
+              </Carousel>
             </div>
           </div>
-        ))}
-      {showSingleProyect && (
-        <ProyectComponent
-          itemProyect={itemProyect}
-          setShowSingleProyect={setShowSingleProyect}
-        />
-      )}
-    </div>
+        </div>
+      </div>
+      <img className="background-image-left" src={imgProyectTask} alt="Image" />
+    </section>
   );
 };
 
