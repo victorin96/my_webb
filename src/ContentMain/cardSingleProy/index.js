@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import logo from "../resources2/logo.svg";
 
 const ProyectComponent = ({ itemProyect, setShowSingleProyect }) => {
   const closeSingleProyectFunc = () => {
@@ -8,11 +9,7 @@ const ProyectComponent = ({ itemProyect, setShowSingleProyect }) => {
   return (
     <div className="singleProyect-card-container">
       <div className="singleProyect-card-container-img">
-        <img
-          className="singleProyect-image-card"
-          src={itemProyect.img[0].img1}
-          alt="Proyecto"
-        />
+        <img src={logo} className="App-logo" alt="logo" />
       </div>
       <div className="singleProyect-longDescription-card">
         <p>{itemProyect.longDescription}</p>
