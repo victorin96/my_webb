@@ -23,6 +23,8 @@ const HomeComponent = () => {
           en desarrollo multiplataforma. Me entusiasma aprender y aplicar nuevas
           tecnologías para crear soluciones innovadoras
           <br />
+          <strong>Habilidades: </strong> ReactJS, Angular, JavaScript, Html,
+          Css, Node.js, Express.js, Nest.js, React Native, Ionic
         </p>
         <button className="button-cv" onClick={handleOpenResume}>
           Descargar CV
