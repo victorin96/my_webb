@@ -5,7 +5,10 @@ import { FaFilePdf } from "react-icons/fa";
 
 const HomeComponent = () => {
   const handleOpenResume = () => {
-    window.open("", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/17mGjEmUlkdfFdaGEeI2x4Fem1eyXXF6A/view",
+      "_blank"
+    );
   };
 
   return (
