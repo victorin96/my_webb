@@ -23,8 +23,6 @@ const HomeComponent = () => {
           en desarrollo multiplataforma. Me entusiasma aprender y aplicar nuevas
           tecnologías para crear soluciones innovadoras
           <br />
-          <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-          above.
         </p>
         <button className="button-cv" onClick={handleOpenResume}>
           Descargar CV
