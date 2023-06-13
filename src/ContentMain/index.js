@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "./styles.css";
 import { FaEnvelope } from "react-icons/fa";
 import PortafolioComponent from "./portafolio";
-import TypedNavbarItemsComponent from "./navbarItems";
 import NavbarComponent from "./navbar";
 import HomeComponent from "./incio";
 
 const ContentMainComponent = () => {
-  const [loading, setLoading] = useState(true);
   const contactOffset = -100;
+
+  useEffect(() => {
+    document.title = "Victor Bisquert Web";
+  }, []);
 
   return (
     <div className="container">
+      <Helmet>
+        <title>Victor Bisquert Web</title>
+      </Helmet>
       <div className="container-box">
         <NavbarComponent contactOffset={contactOffset} />
         <div className="container-sidebar-content">
