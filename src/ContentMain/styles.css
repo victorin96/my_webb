@@ -6,7 +6,7 @@
 .container {
     
     background-color: #282c34;
-    min-height: 200vh;
+    min-height: auto;
     color: #d1d1d1;
   }
   .container-box{
@@ -14,3 +14,31 @@
     margin: 0 auto;
   }
 /* footer */
+.footer-container {
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  justify-content: flex-end; /* Alinear el contenido al final del contenedor */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  padding: 20px; /* Agregar un poco de espacio alrededor del footer */
+  color: #b8b8b8;
+  font-size: 14px;
+}
+
+.content-footer-container {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  margin-bottom: 10px; /* Ajustar el margen inferior */
+}
+
+.gmail-footer-container {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Centrar horizontalmente el contenido */
+}
+
+.icon-gmail {
+  margin-right: 5px; /* Ajustar el margen derecho entre el icono y el texto */
+}
+
+.web-footer-container {
+  margin-top: 10px; /* Ajustar el margen superior */
+}
