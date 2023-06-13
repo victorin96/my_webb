@@ -55,6 +55,8 @@
   @media (max-width: 950px) {
     .contenido-inicio {
       margin-left: 10px;
+      height: auto;
+      margin-bottom: 50px;
     }
     .h1-title {
       color: rgb(188, 244, 245);
