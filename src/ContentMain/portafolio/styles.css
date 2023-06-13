@@ -105,5 +105,12 @@
     color: rgb(188, 244, 245);
     margin-bottom: 10px;
   }
+
+  @media (max-width: 950px) {
+    .skill-bx{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
   
   
