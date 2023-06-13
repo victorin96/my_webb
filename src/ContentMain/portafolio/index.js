@@ -31,11 +31,7 @@ const PortafolioComponent = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2 className="h2-portafolio">Portafolio</h2>
-              <p className="p-portafolio">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+              <p className="p-portafolio"></p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -44,25 +40,25 @@ const PortafolioComponent = () => {
                 swipeable={true}
               >
                 <div className="item link-card">
-                  <a className="astro-DOHJNAO5" href="#">
+                  <a href="#">
                     <img src={imgProyectTask} alt="Image" />
                     <h5>Gestor de tareas</h5>
                   </a>
                 </div>
                 <div className="item link-card">
-                  <a className="astro-DOHJNAO5" href="#">
+                  <a href="#">
                     <img src={imgProyectTask} alt="Image" />
                     <h5>Brand Identity</h5>
                   </a>
                 </div>
                 <div className="item link-card">
-                  <a className="astro-DOHJNAO5" href="#">
+                  <a href="#">
                     <img src={imgProyectTask} alt="Image" />
                     <h5>Logo Design</h5>
                   </a>
                 </div>
                 <div className="item link-card">
-                  <a className="astro-DOHJNAO5" href="#">
+                  <a href="#">
                     <img
                       className="img-item link-card"
                       src={imgProyectTask}
