@@ -55,6 +55,7 @@
   @media (max-width: 950px) {
     .contenido-inicio {
       margin-left: 10px;
+      margin-right: 10px;
       height: auto;
       margin-bottom: 50px;
     }
