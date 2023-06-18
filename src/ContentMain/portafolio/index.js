@@ -54,7 +54,7 @@ const PortafolioComponent = () => {
   };
   const handleCardClick = (project) => {
     const currentURL = window.location.href;
-    const newURL = `${currentURL}${project.id}`;
+    const newURL = `${currentURL}/${project.id}`;
     window.open(newURL, "_blank");
   };
 
