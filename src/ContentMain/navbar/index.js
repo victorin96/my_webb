@@ -14,15 +14,6 @@ const NavbarComponent = ({ contactOffset }) => {
         <div className="box-sidebar">
           <div className="inside-sidebar-navbar">
             <Link
-              className="navbar navbar-home"
-              to="home"
-              smooth={true}
-              duration={500}
-              offset={contactOffset}
-            >
-              INICIO
-            </Link>
-            <Link
               className="navbar navbar-portfolio"
               to="portafolio"
               smooth={true}
@@ -30,15 +21,6 @@ const NavbarComponent = ({ contactOffset }) => {
               offset={contactOffset}
             >
               PORTAFOLIO
-            </Link>
-            <Link
-              className="navbar navbar-contact"
-              to="contact"
-              smooth={true}
-              duration={500}
-              offset={contactOffset}
-            >
-              CONTACTO
             </Link>
           </div>
         </div>
