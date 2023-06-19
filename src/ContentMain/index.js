@@ -18,6 +18,19 @@ const ContentMainComponent = () => {
   }, []);
 
   useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      event.preventDefault();
+      setShowProject(false);
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
+  useEffect(() => {
     const popstate = () => {
       setShowProject(false);
     };
